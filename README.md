@@ -3,10 +3,10 @@ Music recommender system based on collaborative filtering and search query optim
 
 ## Dataset:
 On HDFS, we had the count data (implicit data) in the format (user_id, count, track_id) spilt into train, validation, and test dataset adopted from http://millionsongdataset.com/ 
-No. of Unique Users per set -
-Train set:	1129318
-Validation set:	10000
-Test set:	100000
+<br>No. of Unique Users per set -<br>
+Train set:	1129318 (~1M) <br>
+Validation set:	10000<br>
+Test set:	100000<br>
 
 ## Part 1 - Recommendation based on collaborative filtering using Alternating Least Square (ALS) module from PySpark’s ML module
 Build an implicit model, tuned it using the 3 key hyperparameters (rank, regParam, Alpha) and got the top 500 recommendations per user. Evaluated the model using Mean Average Precision to ensure the ranking is tested against the ground truth set. More details in Project Report.pdf.
